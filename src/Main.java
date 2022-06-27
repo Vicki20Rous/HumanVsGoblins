@@ -1,10 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
 
 
 
 
     public static void main(String[] args) {
-	// write your code here
+        Humans player = new Humans();
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Welcome to Humans vs Goblins!!");
+        System.out.println("Wanna Play? yes or no");
+        String gameTime = input.nextLine();
+
         String x = "x";
             String[][] grid = new String[][]{
                     {x, x, x, x, x, x, x, x, x, x, x, x, x, x},
@@ -27,6 +35,9 @@ public class Main {
                 }
                 System.out.println();
             }
+            System.out.println("-------------------------------");
+
+
 
         }
 }
